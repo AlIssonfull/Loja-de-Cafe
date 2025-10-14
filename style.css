@@ -1,0 +1,538 @@
+@charset "UFT-8";
+@import url('https://fonts.googleapis.com/css2?family=Knewave&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin:0px;
+    padding: 0px;
+}
+body,html{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    background-color: rgb(216, 219, 222);
+}
+
+header{
+    height: 150px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    background-color: ghostwhite;
+}
+
+.logo img{
+    grid-column: 1/2;
+    height: 150px;
+    width: 220px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.menu{
+    display: none;
+}
+
+.nav{
+    grid-column: 3/4;
+    color: rgb(0, 0, 0);
+    height: 60px;
+    margin-top: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 900px;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.nav a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.nav img{
+    height: 25px;
+    cursor: pointer;
+}
+
+.nav p:hover{
+    transform: scale(1.2);
+}
+
+.hero{
+    background-image: url(imagens/lojaback.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 605px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Knewave', sans-serif;
+    font-size: 2.5em;
+    color: rgb(25, 25, 25);
+}
+
+.info{
+    height: 60px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    font-family:  'Lexend Deca', sans-serif;
+    font-size: 1.7em;
+    font-weight: 400;
+}
+.tele{
+    grid-column: 1/2;
+    outline: 2px solid black;
+}
+.insta{
+    grid-column: 2/3;
+    outline: 2px solid black;
+}
+.loc{
+    grid-column: 3/4;
+    outline: 2px solid black;
+}
+.hor{
+    grid-column: 4/5;
+    outline: 2px solid black;
+}
+
+.produto{
+    margin-top: 10px;
+    background-image: url(imagens/produto2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+.produto h1{
+    font-size: 2.5em;
+    margin-left: 150px;
+}
+
+.descri{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.descri h2{
+    font-family: 'Sour Gummy', sans-serif;
+    font-size: 3em;
+}
+.descri p{
+    font-family: 'Sour Gummy', sans-serif;
+    font-size: 2em;
+}
+
+footer{
+    text-align: center;
+    font-size: 1.5em;
+    height: 50px;
+}
+footer p{
+    margin-top: 25px;
+    color: black;
+}
+
+@media (max-width:1133px) and (min-width:796px) {
+    header{
+    height: 150px;
+    display: flex;
+    background-color: ghostwhite;
+}
+
+    .produto{
+    margin-top: 44px;
+}
+}
+
+@media (max-width:795px)  and (min-width:631px) {
+    header{
+    height: 150px;
+    display: flex;
+    background-color: ghostwhite;
+}
+
+    .logo img{
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+    .produto{
+    margin-top: 79px;
+}
+}
+
+@media (max-width:630px) and (min-width:576px){
+    .info{
+    height: 60px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 100%;
+    font-family:  'Lexend Deca', sans-serif;
+    font-size: 1.7em;
+    font-weight: 400;
+}
+    .tele{
+    grid-row: 1/2;
+    grid-column: 1/2;
+    outline: 2px solid black;
+}
+    .insta{
+    grid-row: 1/2;
+    grid-column: 2/3;
+    outline: 2px solid black;
+}
+    .loc{
+    grid-row: 2/3;
+    grid-column: 1/2;
+    outline: 2px solid black;
+}
+    .hor{
+    grid-row: 2/3;
+    grid-column: 2/3;
+    outline: 2px solid black;
+}
+
+    header{
+    height: 150px;
+    display: flex;
+    background-color: ghostwhite;
+}
+
+    .logo img{
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+    .produto{
+    margin-top: 79px;
+}
+}
+
+@media (max-width:575px) and (min-width:434px){
+    .info{
+    height: 60px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 100%;
+    font-family:  'Lexend Deca', sans-serif;
+    font-size: 1.7em;
+    font-weight: 400;
+}
+    .tele{
+    grid-row: 1/2;
+    grid-column: 1/2;
+    outline: 2px solid black;
+}
+    .insta{
+    grid-row: 1/2;
+    grid-column: 2/3;
+    outline: 2px solid black;
+}
+    .loc{
+    grid-row: 2/3;
+    grid-column: 1/2;
+    outline: 2px solid black;
+}
+    .hor{
+    grid-row: 2/3;
+    grid-column: 2/3;
+    outline: 2px solid black;
+}
+
+    header{
+    height: 150px;
+    display: flex;
+    background-color: ghostwhite;
+}
+
+    .produto{
+    margin-top: 10px;
+    background-image: url(imagens/produto2.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+
+    .logo img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+    .produto{
+    margin-top: 109px;
+}
+
+    .descri{
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+    .descri h2{
+    font-family: 'Sour Gummy', sans-serif;
+    font-size: 2.5em;
+}
+    .descri p{
+    font-family: 'Sour Gummy', sans-serif;
+    font-size: 1.7em;
+    font-weight: 600;
+}
+}
+
+@media(max-width:433px) and (min-width:428px){
+    .info{
+    height: 60px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 100%;
+    font-family:  'Lexend Deca', sans-serif;
+    font-size: 1.7em;
+    font-weight: 400;
+}
+    .tele{
+    grid-row: 1/2;
+    grid-column: 1/2;
+    outline: 2px solid black;
+}
+    .insta{
+    grid-row: 1/2;
+    grid-column: 2/3;
+    outline: 2px solid black;
+}
+    .loc{
+    grid-row: 2/3;
+    grid-column: 1/2;
+    outline: 2px solid black;
+}
+    .hor{
+    grid-row: 2/3;
+    grid-column: 2/3;
+    outline: 2px solid black;
+}
+
+    header{
+    height: 150px;
+    display: flex;
+    background-color: ghostwhite;
+}
+
+    .logo img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+    .produto{
+    margin-top: 143px;
+}
+}
+
+@media (max-width:427px) and (min-width:371px){
+.info{
+    height: 60px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 100%;
+    font-family:  'Lexend Deca', sans-serif;
+    font-size: 1.7em;
+    font-weight: 400;
+}
+    .tele{
+    grid-row: 1/2;
+    grid-column: 1/2;
+    outline: 2px solid black;
+}
+    .insta{
+    grid-row: 1/2;
+    grid-column: 2/3;
+    outline: 2px solid black;
+}
+    .loc{
+    grid-row: 2/3;
+    grid-column: 1/2;
+    outline: 2px solid black;
+}
+    .hor{
+    grid-row: 2/3;
+    grid-column: 2/3;
+    outline: 2px solid black;
+}
+
+    header{
+    height: 150px;
+    display: flex;
+    background-color: ghostwhite;
+}
+    .produto{
+    margin-top: 10px;
+    background-image: url(imagens/produto2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+}
+    .logo img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 70px;
+}
+
+    .produto{
+    margin-top: 180px;
+}
+
+    .descri{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+    .descri h2{
+    font-family: 'Sour Gummy', sans-serif;
+    font-size: 2.5em;
+}
+    .descri p{
+    font-family: 'Sour Gummy', sans-serif;
+    font-size: 1.7em;
+    font-weight: 600;
+}
+    .nav{
+        display: none;
+}
+    .menu{
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 70px;
+        cursor: pointer;
+}
+}
+
+@media (max-width:370px){
+    .hero{
+        font-size: 2em;
+    }
+
+.info{
+    height: 60px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 100%;
+    font-family:  'Lexend Deca', sans-serif;
+    font-size: 1.7em;
+    font-weight: 400;
+}
+    .tele{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    outline: 2px solid black;
+}
+    .insta{
+    grid-column: 1/3;
+    grid-row: 2/3;
+    outline: 2px solid black;
+}
+    .loc{
+    grid-column: 1/3;
+    grid-row: 3/4;
+    outline: 2px solid black;
+}
+    .hor{
+    grid-column: 1/3;
+    grid-row: 4/5;
+    outline: 2px solid black;
+}
+
+    header{
+    height: 150px;
+    display: flex;
+    background-color: ghostwhite;
+}
+    .produto{
+    margin-top: 10px;
+    background-image: url(imagens/produto2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+}
+    .logo img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 70px;
+}
+
+    .produto{
+    margin-top: 212px;
+}
+    .produto h1{
+        margin-left: 0px;
+    }
+
+    .descri{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+    .descri h2{
+    font-family: 'Sour Gummy', sans-serif;
+    font-size: 2.5em;
+}
+    .descri p{
+    font-family: 'Sour Gummy', sans-serif;
+    font-size: 1.7em;
+    font-weight: 600;
+}
+    .nav{
+        display: none;
+}
+    .menu{
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 70px;
+        cursor: pointer;
+}
+}
+
+/* and (min-width:px)
