@@ -352,9 +352,6 @@ footer p{
     .produto{
     margin-top: 143px;
 }
-.hero h1{
-        color: chartreuse;
-    }
 }
 
 @media (max-width:427px) and (min-width:371px){
@@ -412,7 +409,7 @@ footer p{
 }
 
     .produto{
-    margin-top: 180px;
+    margin-top: 185px;
 }
 
     .descri{
